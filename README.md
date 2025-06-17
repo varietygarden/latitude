@@ -13,7 +13,9 @@ hugo new site new-site
 cd new-site
 git clone https://github.com/varietygarden/latitude themes/latitude
 echo "theme = 'latitude'" >> config.toml
-cp themes/latitude/static/style.css static/
+ln -s themes/latitude/static/style.css static/style.css
+ln -s themes/latitude/static/mobile.css static/mobile.css
+# Bear in mind that when creating symlinks, full file paths are required.
 ```
 
 ## Etc.
