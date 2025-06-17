@@ -1,0 +1,25 @@
+<!--
+	class: class of the figure
+	link: url the image directs to
+	alt: alternative text
+	caption: caption
+	mouse: what the image says when moused over ("title" in HTML)
+-->
+<div {{ with .Get "class" }}class="{{.}}"{{ end -}}>
+	{{- with .Get "src"}}<a target="_blank" href="{{.}}">{{ end -}}
+	<img src="{{ .Get "src" }}"
+	     {{- with .Get "mouse" }} title="{{.}}"{{ end -}}
+	     {{- with .Get "alt" }} alt="{{.}}"{{ end -}}
+	>
+	{{- if .Get "src"}}</a>{{ end -}}
+	{{- with .Get "caption" -}}
+	<div class=desc>
+	{{- . -}}
+	</div>
+	{{- end -}}
+	{{- with .Get "camspecs" -}}
+	<div class=camspecs>
+	{{- . -}}
+	</div>
+	{{- end -}}
+</div>

@@ -1,0 +1,6 @@
+{{ define "title" }}
+{{ if eq .Page.Type "article" "announcement" "thing" }}{{ .Title | title }}
+<br>
+<h3>{{ .Param "subtitle" }}</h3>
+<h3>{{ .Date.Format "January 02, 2006" }}</h3><hr>{{- end }}
+{{- end }}
