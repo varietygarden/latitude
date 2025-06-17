@@ -1,5 +1,7 @@
 # Latitude: A theme for Hugo
 
+<img src="preview.webp" width="300" title="Landing page.">
+
 Latitude is a theme for Hugo that I created for my [personal webpage](https://cherub.im).
 
 Special thanks to Luke Smith's [Lugo](https://github.com/Lukesmithxyz/lugo), which was the jumping-off point for how Latitude came to be. Several features from Lugo are present in Latitude.
