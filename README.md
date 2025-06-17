@@ -1,6 +1,6 @@
 # Latitude: A theme for Hugo
 
-<img src="preview.webp" width="300" title="Landing page.">
+<img src="preview.webp" width="800" title="Landing page.">
 
 Latitude is a theme for Hugo that I created for my [personal webpage](https://cherub.im).
 
